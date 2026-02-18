@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>die App</string>
+    <key>CFBundleDisplayName</key>
+    <string>die App</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.dieapp.app</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>LSRequiresIPhoneOS</key>
+    <true/>
+    <key>UILaunchScreen</key>
+    <dict/>
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
+    <key>NSFamilyControlsUsageDescription</key>
+    <string>die App benötigt diese Berechtigung, um ausgewählte Apps zu sperren – bis du dir die Zeit durch deine Ziele verdient hast.</string>
+    <key>MinimumOSVersion</key>
+    <string>16.0</string>
+</dict>
+</plist>
