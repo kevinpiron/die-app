@@ -2,6 +2,10 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0d0d14">
 <title>die App</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -9,9 +13,10 @@ body{
   background:linear-gradient(135deg,#0d0d1a,#1a0a2e);
   min-height:100vh;display:flex;justify-content:center;align-items:center;
   font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  -webkit-user-select:none;user-select:none;
 }
 
-/* ── Phone Frame ── */
+/* ── Phone Frame (Desktop) ── */
 .phone{
   width:390px;height:844px;background:#000;border-radius:52px;padding:14px;
   box-shadow:0 0 0 2px #222,0 40px 120px rgba(0,0,0,0.95),inset 0 0 0 1px #444;
@@ -25,6 +30,21 @@ body{
   background:#0d0d14;padding:16px 24px 6px;
   display:flex;justify-content:space-between;
   font-size:13px;font-weight:600;color:#fff;flex-shrink:0;
+}
+
+/* ── Mobile Fullscreen ── */
+@media (max-width:500px){
+  body{background:#0d0d14;align-items:stretch;}
+  .phone{
+    width:100%;height:100vh;height:100dvh;
+    border-radius:0;padding:0;
+    box-shadow:none;
+    position:fixed;inset:0;
+  }
+  .screen{border-radius:0;}
+  .full-layer{border-radius:0!important;}
+  .status-bar{padding:env(safe-area-inset-top,16px) 24px 6px;}
+  .tabs{padding-bottom:max(22px,env(safe-area-inset-bottom));}
 }
 .content{flex:1;overflow-y:auto;overflow-x:hidden;padding-bottom:8px;}
 .content::-webkit-scrollbar{display:none;}
